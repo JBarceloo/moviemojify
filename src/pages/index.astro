@@ -3,23 +3,44 @@ import Layout from "../layouts/Layout.astro";
 import Container from "../components/Container.astro";
 
 import EmojiResult from "../components/EmojiResult";
-
 ---
 
 <Layout title="Memojify">
-  <Container>
-    <header class="text-center mt-[109px] mb-[82px]">
-      <h1 class="text-5xl mb-[50px] font-bold text-textColor">Moviemojify</h1>
-      <p class="text-white">
-        Create custom emojis from your favorite movie titles!
-      </p>
-    </header>
+   <Container>
+      <header class="text-center mt-[109px] mb-[82px]">
+         <h1 class="text-5xl mb-[50px] font-bold text-textColor">
+            Moviemojify
+         </h1>
+         <p class="text-white">
+            Create custom emojis from your favorite movie titles!
+         </p>
+      </header>
 
-    <main class="flex justify-center m-auto flex-col max-w-sm">
-      <EmojiResult client:load />
-    </main>
+      <main class="flex justify-center m-auto flex-col max-w-sm">
+         <EmojiResult client:load />
 
-		
-  </Container>
+         <div class="authors flex flex-col">
+            <h2 class="text-lg text-textColor mb-[20px]">Authors</h2>
+            <div class="barcelo">
+               <img
+                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-github-1.png"
+                  width="20"
+                  height="20"
+                  alt="Github icon"
+                  class="inline"
+               />
+               <a href="https://github.com/jbarceloo" class="ml-1 hover:text-textColor">Jorge Barceló</a>
+            </div>
+            <div class="mohamed">
+               <img
+                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-github-1.png"
+                  width="20"
+                  alt="Github icon"
+                  class="inline"
+               />
+               <a href="https://github.com/negativems" class="ml-1 hover:text-textColor">Mohamed Mohamed</a>
+            </div>
+         </div>
+      </main>
+   </Container>
 </Layout>
-
