@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "netlify deploy --prod --dir=dist"
   },
   "dependencies": {
     "@astrojs/react": "^2.0.2",
