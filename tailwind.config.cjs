@@ -5,8 +5,9 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: '#201A30',
-				colorButton: '#0CF3E1',
-				colorFocus: '#38304D'
+				textColor: '#0CF3E1',
+				colorFocus: '#38304D',
+				submitButton: 'rgba(12, 243, 225, 0.5)'
 		},
 		fontFamily: {
 			'monserrat': ['Monserrat', 'sans-serif'],

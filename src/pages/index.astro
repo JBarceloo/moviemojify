@@ -1,16 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/Container.astro";
+import Input from "../components/Input.astro";
 ---
 
 <Layout title="Memojify">
   <Container>
-		<header class="text-center mt-[109px]">
-			<h1 class="text-4xl mb-[50px] font-bold">Memojify</h1>
-			<p>Create custom emojis from your favorite movie titles!</p>
+		<header class="text-center mt-[109px] mb-[82px]">
+			<h1 class="text-5xl mb-[50px] font-bold text-textColor">Memojify</h1>
+			<p class="text-white">Create custom emojis from your favorite movie titles!</p>
 		</header>
 
-		
+		<main class="flex justify-center m-auto flex-col max-w-sm">
+			<Input />
+			<button class="mt-[40px] mb-[120px] bg-colorFocus p-2 rounded-md">
+				➕
+			</button>
+			<button class="bg-submitButton border-[3px] rounded-lg p-2 border-textColor shadow-lg">
+				<div class="flex justify-center">
+					<img src='/Arrow1.png' />
+				</div>
+			</button>
+		</main>
 	</Container>
 </Layout>
 
